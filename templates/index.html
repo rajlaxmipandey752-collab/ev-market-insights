@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Electric Vehicle Market Performance & Insights</h1>
+  <p>An interactive Tableau analysis of 300,000 EV models across 15 vehicle categories, 5 battery
+     chemistries and global manufacturing hubs, covering sales, market share, range, pricing and customer satisfaction.</p>
+  <div class="cta">
+    <a class="btn" href="{{ url_for('dashboard') }}">Open Dashboard</a>
+    <a class="btn ghost" href="{{ url_for('story') }}">View Story</a>
+  </div>
+</section>
+<section class="cards">
+  <article><h3>Market Strategy</h3><p>Which categories drive annual sales, who leads the market and how satisfied customers are by segment (Emily Johnson).</p></article>
+  <article><h3>Business Intelligence</h3><p>Manufacturer share, battery distribution, manufacturing-country analysis and ratings (David Chen).</p></article>
+  <article><h3>Sustainable Mobility</h3><p>Battery technology comparison, range and efficiency trends and CO₂ savings (Dr. Sarah Williams).</p></article>
+</section>
+{% endblock %}

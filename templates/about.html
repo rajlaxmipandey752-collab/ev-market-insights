@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="page-title">About the Project</h1>
+<div class="prose">
+  <p><b>Dataset:</b> Electric Vehicle Market Classification Dataset (Kaggle, MIT licence) - 300,000 synthetic EV records, 37 columns
+     covering battery, range, performance, charging, price, safety, sales and customer rating. Manufacturer and model names are fictional.</p>
+  <p><b>Pipeline:</b> Kaggle CSV → Python/pandas cleaning (<code>data_preparation.py</code>) → Tableau Desktop/Public
+     (calculated fields, sheets, dashboards, story) → Tableau Public → Flask web app (Tableau Embedding API v3).</p>
+  <p><b>Tools:</b> Tableau Public, Python 3, pandas, Flask, HTML/CSS.</p>
+</div>
+{% endblock %}
